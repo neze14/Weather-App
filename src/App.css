@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Times New Roman', Times, serif;  
+}
+
+:root{
+  background-color: #e6f6ff;
+  --main-colour: #33b6de;
+  --bg-colour: #e6f6ff;
+  --text-colour: black;
+  --accent-colour: #3c4975;
+}
+
+/* scrollbar */
+::-webkit-scrollbar{
+  height: 4px;
+  width: 6px;
+  background-color: var(--bg-colour);
+}
+::-webkit-scrollbar-track{
+  border-radius: 4px;
+  margin-block: .5em;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#d3d3d3, #e6e6e6);
+  border-radius: 6px;
+}
+/* scrollbar */
+
+body{
+  background: var(--bg-colour);
+  color: var(--text-colour);
+  margin-top: 3rem;
+  min-width: 390px;
+  min-height: 100vh;
+  display: flex;
+  place-items: center;
+}
+
+nav {
+  height: 5em;
+  width: 100vw;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  background-color: var(--bg-colour);
+}
+.brand{
+  display: flex;
+  align-items: center;
+}
+.brand > img{
+  width: 5em;
+}
+.brand-detail{
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin-bottom: 5em;
+  font-size: 18px;
+}
+.brand-detail a{
+  color: var(--text-colour);
+  text-decoration: underline;
+}
+.brand-detail a:hover{
+  color: var(--accent-colour);
+}
+
+footer{
+  height: auto;
+  width: 100vw;
+  margin: 10px auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-colour);
+}
+
+footer a{
+  color: var(--text-colour);
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer a:hover{
+  color: var(--accent-colour);
+}
+
+.container{
+  margin: auto;
+  padding: 0 20px;
+  width: 90vw;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto;
+  width: 100%;
+}
+.weather-cont{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+.search-bar {
+  width:80%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather {
+  width: 300px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: var(--main-colour);
+  box-shadow: 10px -2px 20px 2px var(--accent-colour);
+  margin: 3em auto;
+}
+.top,.bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.city{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.weather-description{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  margin: 2px 0;
+}
+.weather-icon{
+  width:100px
+}
+.temperature{
+  font-weight: 600;
+  font-size: 70px;
+  width: auto;
+  letter-spacing: -5px;
+  margin: 10px 0;
+}
+.details {
+  width: 100%;
+  padding-left: 20px;
+}
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
+}
+.parameter-label {
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+}
+.parameter-details {
+  text-align: right;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.title {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.daily-item {
+  background-color: white;
+  border-radius: 15px;
+  height: 5em;
+  margin: 10px;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  padding: 5px 20px;
+}
+
+.icon-small {
+  width: 40px;
+}
+.ri-arrow-down-s-line {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  transform: scale(1.5);
+}
+.daily-item .day {
+  cursor: inherit;
+  color: #212121;
+  flex: 1 1;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+.description {
+  cursor: inherit;
+  flex: 1 1;
+  margin-right: 15px;
+  text-align: right;
+}
+
+.min-max {
+  color: #757575;
+}
+
+.daily-details-grid {
+  grid-row-gap: 0;
+  grid-column-gap: 15px;
+  -webkit-column-gap: 15px;
+  column-gap: 15px;
+  display: grid;
+  flex: 1 1;
+  grid-template-columns: auto auto;
+  padding: 5px 15px;
+  row-gap: 0;
+}
+
+.daily-details-grid-item {
+  align-items: center;
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+}
+
+.daily-details-grid-item label:first-child {
+  color: #757575;
+}
+
+.daily-details-grid-item label:last-child {
+  color: #212121;
+}
+
+@media screen and (max-width: 770px) {
+  .flex{
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 520px) {
+  .brand > img {
+    width: 4em;
+  }
+  .brand > h1{
+    font-size: 2em;
+  }
+  .brand-detail{
+    font-size: 14px;
+  }
+}
