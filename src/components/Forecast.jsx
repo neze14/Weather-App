@@ -31,11 +31,11 @@ const Forecast = ({ data }) => {
                                 </div>
                                 <div className="daiy-details-grid-item">
                                     <label>Pressure:</label>
-                                    <label>{item.main.pressure}hPa</label>
+                                    <label>{item.main.pressure} hPa</label>
                                 </div>
                                 <div className="daiy-details-grid-item">
-                                    <label>Clounds:</label>
-                                    <label>{item.clouds.all}</label>
+                                    <label>Clouds:</label>
+                                    <label>{item.clouds.all}%</label>
                                 </div>
                             </div>
                         </AccordionItemPanel>
