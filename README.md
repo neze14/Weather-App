@@ -1,10 +1,12 @@
-# React + Vite
+# **Weather App - Anyanwu Weather ☁🌞**
+### React + Vite
 
-npm run dev
+Developed using GeoDB Cities API and OpenWeather API.
+[Click here to explore the project!](https://anyanwu-weather.netlify.app)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## _🍁 Chineze Okadigbo 🍁_
+[My Portfolio](https://chineze-okadigbo.netlify.app)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7a17420e-c341-4b44-b677-4f2aa347d5e3/deploy-status)](https://app.netlify.com/sites/anyanwu-weather/deploys)
